@@ -9,16 +9,15 @@
     "newArchEnabled": true,
     "scheme": "habittracker",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "defild.habittracker"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "src/assets/images/favicon.png"
+      },
+      "package": "defild.habittracker"
     },
     "plugins": [
       "expo-asset",
