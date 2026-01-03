@@ -1,9 +1,11 @@
+import { UiButton } from "@/components/UiButton/UiButton";
 import { Text, View, StyleSheet } from "react-native";
 
 export default function OnboardingScreen() {
   return (
     <View style={styles.container}>
       <Text>Onboarding Screen</Text>
+      <UiButton variant="primary" title="Зберегти" onPress={() => {}} />
     </View>
   );
 }

@@ -9,7 +9,6 @@ import "./src/lang/i18n";
 import { baseStyle } from "@/theme/baseStyles";
 
 const withProvider = (Component: ComponentType) => {
-  // eslint-disable-next-line react/display-name
   return () => {
     return (
       <GestureHandlerRootView style={baseStyle.flex}>
