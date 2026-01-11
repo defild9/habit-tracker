@@ -1,12 +1,13 @@
 import { AppNavigation } from "@/navigation/AppNavigation";
 import { ThemeProvider } from "@/theme/ThemeContext";
-import { ComponentType } from "react";
+import { ComponentType, useEffect } from "react";
 import { StatusBar } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import "./src/lang/i18n";
 import { baseStyle } from "@/theme/baseStyles";
+import { useAppVm } from "@/modules/app/vm/useApp.vm";
 
 const withProvider = (Component: ComponentType) => {
   return () => {
@@ -28,9 +29,11 @@ const withProvider = (Component: ComponentType) => {
 };
 
 export const App = withProvider(() => {
-  return (
-    <>
-      <AppNavigation />
-    </>
-  );
+  const { initRoute, isInit, initializeApp } = useAppVm();
+
+  useEffect(() => {
+    initializeApp();
+  });
+
+  return <>{isInit && <AppNavigation initRoute={initRoute} />}</>;
 });

@@ -45,7 +45,7 @@ const variantStyles: Record<TextVariant, TextStyle> = {
   },
   caption: {
     fontSize: 14,
-    lineHeight: 20,
+    lineHeight: 22,
   },
   small: {
     fontSize: 12,

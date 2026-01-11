@@ -1,6 +1,30 @@
 {
   "common": {},
-  "onboarding": {},
+  "onboarding": {
+    "step_0": {
+      "title": "Track Habits",
+      "description": "Build better routines and keep yourself accountable every single day."
+    },
+    "step_1": {
+      "title": "Analyze Progress",
+      "description": "Visualize your improvement with beautiful charts and detailed statistics."
+    },
+    "step_2": {
+      "title": "Stay Focused",
+      "description": "Reach your goals one day at a time. Your better self is waiting."
+    },
+    "step_3": {
+      "title": "One Last Thing",
+      "description": "What should we call you?"
+    },
+    "btn": {
+      "next": "Next",
+      "get_started": "Get Started"
+    },
+    "input": {
+      "placeholder": "Enter your name"
+    }
+  },
   "home": {},
   "habits": {},
   "settings": {}
